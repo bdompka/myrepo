@@ -1,0 +1,13 @@
+kind: ConfigMap
+apiVersion: v1
+metadata: 
+ name: ${project.artifactId}-config
+data: 
+  application-env-default.properties: |-
+    spring.datasource.url: jdbc:postgresql://localhost:5432/ordermanagement_db
+    spring.datasource.username: ordermanagement_db_user
+    spring.datasource.password: ordermanagement_db_password
+    spring.datasource.driver-class-name: org.postgresql.Driver
+    spring.jpa.database-platform: org.hibernate.dialect.PostgreSQLDialect
+    logging.level.root: INFO
+  

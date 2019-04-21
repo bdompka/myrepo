@@ -1,0 +1,3 @@
+Deployment steps
+1. run build.bat file to build application and generate image
+2. run deploy.bat it will deploy micro services
